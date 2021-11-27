@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="425.0" prefWidth="762.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.designController">
+   <children>
+      <Pane fx:id="desPane" layoutX="14.0" layoutY="19.0" prefHeight="232.0" prefWidth="236.0" style="-fx-background-color: #3196c5;" visible="false">
+         <children>
+            <JFXTextArea fx:id="desPaneArea" layoutX="7.0" layoutY="7.0" prefHeight="218.0" prefWidth="222.0" style="-fx-text-fill: white;" text="abcdefghijklmnopqrstuvwxyz" wrapText="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </JFXTextArea>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <AnchorPane layoutX="250.0" layoutY="15.0" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="400.0" prefWidth="508.0" style="-fx-background-color: #3976c5;" stylesheets="@application.css" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="60.0" spacing="20.0" style="-fx-background-color: rgb(240,240,240);" styleClass="MenuVbox" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="448.0" AnchorPane.topAnchor="70.0">
+               <children>
+                  <JFXButton fx:id="home" contentDisplay="GRAPHIC_ONLY" onAction="#menuHandler" ripplerFill="#f0f0f0" textFill="#3196c5">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="encrypt" contentDisplay="GRAPHIC_ONLY" onAction="#menuHandler" ripplerFill="#f0f0f0">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@encrp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="decrypt" contentDisplay="GRAPHIC_ONLY" onAction="#menuHandler" ripplerFill="#f0f0f0">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@decrp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="shutt" contentDisplay="GRAPHIC_ONLY" onAction="#menuHandler" ripplerFill="#f0f0f0">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@shuttdown.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" top="20.0" />
+               </padding>
+            </VBox>
+            <Pane layoutX="60.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3196c5;" styleClass="colseMini" AnchorPane.bottomAnchor="330.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <JFXButton layoutX="413.0" onAction="#close" opacity="0.5" ripplerFill="#3196c4" text="X" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="372.0" onAction="#minimize" opacity="0.5" prefHeight="39.0" prefWidth="35.0" ripplerFill="#3196c4" text="0" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@mini.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Label layoutX="14.0" layoutY="16.0" style="-fx-border-width: 2 2 2 2; -fx-border-style: segments(100,10); -fx-border-color: white;" text="Play Fair Algorithm" textFill="WHITE">
+                     <font>
+                        <Font name="Constantia" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <effect>
+                        <Blend>
+                           <topInput>
+                              <BoxBlur />
+                           </topInput>
+                        </Blend>
+                     </effect>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+               </children>
+            </Pane>
+            <AnchorPane fx:id="homePane" layoutX="115.0" layoutY="91.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+               <children>
+                  <Label layoutX="48.0" layoutY="213.0" style="-fx-border-width: 1 2 3 4; -fx-border-color: #9a9090;" text="wellcome to Play Fair Cipher" textFill="#9a9090">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <ImageView layoutX="175.0" layoutY="64.0">
+                     <image>
+                        <Image url="@grid.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane fx:id="encryPane" layoutX="125.0" layoutY="101.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+               <children>
+                  <JFXTextField fx:id="encryKey" focusColor="#3196c5" labelFloat="true" layoutX="39.0" layoutY="20.0" prefHeight="25.0" prefWidth="184.0" promptText="Enter Encryption Key">
+                     <font>
+                        <Font name="Book Antiqua" size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextArea fx:id="encryArea" editable="false" focusColor="#3196c5" labelFloat="true" layoutX="39.0" layoutY="77.0" prefHeight="175.0" prefWidth="371.0" promptText="The Contents of the File will display here !" wrapText="true">
+                     <font>
+                        <Font name="Book Antiqua" size="19.0" />
+                     </font>
+                  </JFXTextArea>
+                  <JFXButton layoutX="39.0" layoutY="281.0" onAction="#encryptionButton" prefHeight="29.0" prefWidth="146.0" ripplerFill="#3976c5" style="-fx-background-color: #3976c5;" text="Encryption" textFill="WHITE">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children></AnchorPane>
+            <AnchorPane fx:id="decryPane" layoutX="125.0" layoutY="101.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+               <children>
+                  <JFXTextField fx:id="decryKey" focusColor="#3196c5" labelFloat="true" layoutX="39.0" layoutY="20.0" prefHeight="25.0" prefWidth="184.0" promptText="Enter Decryption Key">
+                     <font>
+                        <Font name="Book Antiqua" size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextArea fx:id="decryArea" editable="false" focusColor="#3196c5" labelFloat="true" layoutX="39.0" layoutY="77.0" prefHeight="175.0" prefWidth="371.0" promptText="The Contents of the File will display here !" wrapText="true">
+                     <font>
+                        <Font name="Book Antiqua" size="19.0" />
+                     </font>
+                  </JFXTextArea>
+                  <JFXButton layoutX="39.0" layoutY="281.0" onAction="#decryptionButton" prefHeight="29.0" prefWidth="146.0" ripplerFill="#3976c5" style="-fx-background-color: #3976c5;" text="Decryption" textFill="WHITE">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children></AnchorPane>
+            <AnchorPane fx:id="shuttPane" layoutX="125.0" layoutY="101.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+               <children>
+                  <JFXTextArea fx:id="tableOutput" layoutX="96.0" layoutY="23.0" prefHeight="218.0" prefWidth="257.0" style="-fx-text-fill: #3196c5;">
+                     <font>
+                        <Font name="Constantia Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="2.0" left="20.0" right="20.0" top="2.0" />
+                     </padding>
+                  </JFXTextArea>
+                  <JFXButton layoutX="162.0" layoutY="262.0" onAction="#close" ripplerFill="#3196c5" style="-fx-background-color: #3196c5;" text="Shuttdown" textFill="WHITE">
+                     <font>
+                        <Font name="Constantia" size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children></AnchorPane>
+            <JFXButton fx:id="ideaButton" contentDisplay="GRAPHIC_ONLY" layoutY="6.0" onAction="#showHelp" opacity="0.5" prefHeight="58.0" prefWidth="60.0" ripplerFill="#3978c400" styleClass="ideaOp" stylesheets="@application.css">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="43.0">
+                     <image>
+                        <Image url="@idea.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Bloom />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</AnchorPane>

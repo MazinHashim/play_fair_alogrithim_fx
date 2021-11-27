@@ -1,0 +1,14 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.MenuVbox JFXButton:hover{
+	-fx-background-color: rgb(220,220,220);
+}
+.MenuVbox JFXButton:focused{
+	-fx-border-color:  #3196c5;
+	-fx-border-width: 0 0 0 3 ;
+}
+.colseMini JFXButton:hover,focused{
+	-fx-opacity: 1.0;
+}
+.ideaOp:hover{
+	-fx-opacity: 1.0;
+}

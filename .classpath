@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Semester 4/Java/Java Fx/jfounix jar/beangle-notification-2.3.0.jar"/>
+	<classpathentry kind="lib" path="D:/Semester 4/Java/Java Fx/jfounix jar/caffeine-2.5.3.jar"/>
+	<classpathentry kind="lib" path="D:/Semester 4/Java/Java Fx/jfounix jar/commons-lang3-3.6.jar"/>
+	<classpathentry kind="lib" path="D:/Semester 4/Java/Java Fx/jfounix jar/jfoenix-1.6.0.jar"/>
+	<classpathentry kind="lib" path="D:/Semester 4/Java/Java Fx/jfounix jar/reactive-streams-1.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/Semester 4/Java/Java Fx/jfounix jar/reduxfx-jfoenix-0.4.1.jar"/>
+	<classpathentry kind="lib" path="D:/Semester 4/Java/Java Fx/jfounix jar/reduxfx-view-0.4.1.jar"/>
+	<classpathentry kind="lib" path="D:/Semester 4/Java/Java Fx/jfounix jar/rxjava-2.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Semester 4/Java/Java Fx/jfounix jar/slf4j-api-1.7.25.jar"/>
+	<classpathentry kind="lib" path="D:/Semester 4/Java/Java Fx/jfounix jar/vavr-0.9.0.jar"/>
+	<classpathentry kind="lib" path="D:/Semester 4/Java/Java Fx/jfounix jar/vavr-match-0.9.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
